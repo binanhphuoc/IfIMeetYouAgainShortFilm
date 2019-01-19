@@ -51,6 +51,9 @@ jobs:
             npm test
   
   deploy:
+    docker:
+      # specify the version you desire here
+      - image: circleci/node:7.10
     steps:
       - checkout
       - run:
