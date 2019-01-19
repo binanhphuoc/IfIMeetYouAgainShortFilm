@@ -1,0 +1,11 @@
+**/.next
+**/.vscode
+node_modules
+**/node_modules
+web
+webapp/out
+webapp/build
+**/tmp
+boilerplates
+**/coverage
+**/src/serviceWorker.js
