@@ -24,3 +24,15 @@
     opacity: 1;
     transition: opacity 1s ease-in;
 }
+
+.fadeZoomOut-appear {
+    opacity: 0.01;
+    transform: scale(1.3);
+}
+  
+.fadeZoomOut-appear.fadeZoomOut-appear-active {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in;
+    transition: transform 20s ease-out;
+}

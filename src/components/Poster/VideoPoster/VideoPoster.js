@@ -10,11 +10,13 @@ class VideoPoster extends Component {
   static propTypes = {
     classes: PropTypes.shape().isRequired,
     onEnded: PropTypes.func,
+    endTime: PropTypes.number,
     url: PropTypes.string.isRequired,
   }
 
   static defaultProps = {
     onEnded: () => {},
+    endTime: 0.95,
   }
 
   constructor(props) {
@@ -26,7 +28,8 @@ class VideoPoster extends Component {
 
   onEnded = (state) => {
     const { played } = state;
-    if (played >= 0.95) {
+    const { endTime } = this.props;
+    if (played >= endTime) {
       const { onEnded } = this.props;
       onEnded();
     }
