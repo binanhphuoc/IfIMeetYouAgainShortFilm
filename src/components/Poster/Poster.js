@@ -5,7 +5,7 @@ import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import VideoPoster from "./VideoPoster/VideoPoster";
 import Particles from "../Particles/Particles";
 //import video from "../../resources/poster/teaser.mp4";
-import poster from "../../resources/poster/poster.jpg";
+//import poster from "../../resources/poster/poster.jpg";
 
 class Poster extends Component {
   static propTypes = {
@@ -46,7 +46,7 @@ class Poster extends Component {
               onEnded={this.onEnded}
             />
           )}
-          {ended && <img style={{ position: "absolute", left: 0 }} alt="" key="img" width="100%" src={poster} />}
+          {ended && <img style={{ position: "absolute", left: 0 }} alt="" key="img" width="100%" src={"https://firebasestorage.googleapis.com/v0/b/ifimeetyouagain-shortfilm.appspot.com/o/ShortTeaser%2Fposter.jpg?alt=media&token=c2fa074a-28e0-49f8-b019-a36b8081354d"} />}
         </ReactCSSTransitionGroup>
         {ended && <Particles />}
       </div>
