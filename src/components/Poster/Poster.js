@@ -32,7 +32,7 @@ class Poster extends Component {
   render() {
     const { ended } = this.state;
     return (
-      <div>
+      <div style={{overflow: "hidden"}}>
         <ReactCSSTransitionGroup
           transitionName="fade"
           transitionAppearTimeout={2000}
@@ -44,6 +44,7 @@ class Poster extends Component {
               key="VideoPoster"
               url="https://dai.ly/x713k17"
               onEnded={this.onEnded}
+              endTime={0.93}
             />
           )}
           {ended
