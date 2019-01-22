@@ -42,7 +42,7 @@ class Poster extends Component {
           {!ended && (
             <VideoPoster
               key="VideoPoster"
-              url="https://firebasestorage.googleapis.com/v0/b/ifimeetyouagain-shortfilm.appspot.com/o/ShortTeaser%2Fteaser.mp4?alt=media&token=142f9d6a-5571-4151-be3b-ccb9bde63464"
+              url="https://dai.ly/x713k17"
               onEnded={this.onEnded}
             />
           )}
