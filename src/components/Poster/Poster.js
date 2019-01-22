@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import ReactCSSTransitionGroup from "react-addons-css-transition-group";
 import VideoPoster from "./VideoPoster/VideoPoster";
 import Particles from "../Particles/Particles";
-import video from "../../resources/poster/teaser.mp4";
+//import video from "../../resources/poster/teaser.mp4";
 import poster from "../../resources/poster/poster.jpg";
 
 class Poster extends Component {
@@ -42,7 +42,7 @@ class Poster extends Component {
           {!ended && (
             <VideoPoster
               key="VideoPoster"
-              url={video}
+              url={"https://firebasestorage.googleapis.com/v0/b/ifimeetyouagain-shortfilm.appspot.com/o/ShortTeaser%2Fteaser.mp4?alt=media&token=142f9d6a-5571-4151-be3b-ccb9bde63464"}
               onEnded={this.onEnded}
             />
           )}
