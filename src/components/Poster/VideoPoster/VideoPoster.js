@@ -24,9 +24,12 @@ class VideoPoster extends Component {
     };
   }
 
-  onEnded = () => {
-    const { onEnded } = this.props;
-    onEnded();
+  onEnded = (state) => {
+    const { played } = state;
+    if (played >= 0.95) {
+      const { onEnded } = this.props;
+      onEnded();
+    }
   }
 
   render() {
@@ -45,9 +48,9 @@ class VideoPoster extends Component {
           url={url}
           playing
           muted={muted}
-          onEnded={this.onEnded}
+          onProgress={this.onEnded}
           width="100%"
-          height="100%"
+          height="100vh"
         />
       </div>
     );
