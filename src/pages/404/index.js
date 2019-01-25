@@ -8,18 +8,11 @@ class Home extends Component {
     classes: PropTypes.shape().isRequired,
   }
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      navbarShown: false,
-    };
-  }
-
   render() {
     const { classes } = this.props;
     return (
       <div className={classes.root}>
-        <h1>We're sorry. This page is not available.</h1>
+        {"We're sorry. This page is not available."}
       </div>
     );
   }

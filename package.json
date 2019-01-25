@@ -18,7 +18,7 @@
     "react-visibility-sensor": "^5.0.2"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"cd handlers && nodemon certbot-auth.js\"",
+    "start": "concurrently \"react-scripts start\" \"cd handlers && npm start\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
