@@ -1,0 +1,13 @@
+{
+  "name": "handlers",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon certbot-auth.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

@@ -32,7 +32,7 @@ class Poster extends Component {
   render() {
     const { ended } = this.state;
     return (
-      <div style={{overflow: "hidden"}}>
+      <div style={{ overflow: "hidden" }}>
         <ReactCSSTransitionGroup
           transitionName="fade"
           transitionAppearTimeout={2000}

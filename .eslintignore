@@ -10,3 +10,4 @@ boilerplates
 **/coverage
 **/src/serviceWorker.js
 **/src/components/Icons
+**/handlers
