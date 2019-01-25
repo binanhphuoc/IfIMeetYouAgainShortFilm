@@ -49,6 +49,7 @@ jobs:
           command: |
             npm run lint:fix
             npm test
+            npm run build
   
   deploy:
     docker:
