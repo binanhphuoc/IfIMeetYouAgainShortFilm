@@ -4,7 +4,7 @@
   "description": "",
   "main": "certbot-auth.js",
   "scripts": {
-    "start": "nodemon certbot-auth.js"
+    "start": "node certbot-auth.js"
   },
   "author": "",
   "license": "ISC"
