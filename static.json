@@ -1,0 +1,5 @@
+{
+    "routes": {
+        "/.well-known/acme-challenge/SUQKxNB7zm52zZdMOpsuMFG3k_ViWna-kCUQRJwvx5M": ".certbot"
+    }
+}
